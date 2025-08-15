@@ -5,6 +5,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import Aboutme from './components/Aboutme'
 import Lenis from 'lenis'
 import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
         <HeroSection/>
         <Aboutme/>
         <Experience/>
+        <Projects/>
       </div>
     </ThemeProvider>
   )
