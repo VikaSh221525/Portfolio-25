@@ -11,7 +11,7 @@ const HeroSection = () => {
                     autoPlay
                     muted
                     src={isDark ? "/AnimatedVideo.mp4" : "/HeroWhite.mp4"}
-                    className='w-full md:w-3/6 absoluteCenter outline-none'
+                    className='w-full lg:w-3/6 absoluteCenter outline-none'
                     key={isDark ? 'dark-video' : 'light-video'}
                 />
             </div>
