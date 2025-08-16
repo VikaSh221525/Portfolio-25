@@ -47,10 +47,11 @@ const Projects = () => {
                         <motion.a
                             key={project.id}
                             href="#" // You can replace this with your actual link
-                            className='group relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 w-full max-w-sm cursor-pointer'
+                            className='group relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300  w-full max-w-sm cursor-pointer'
                             style={{ backgroundColor: "var(--bg-secondary)" }}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
+                            whileHover={{ y: -8, scale: 1.03 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         >
@@ -58,13 +59,13 @@ const Projects = () => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className='w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110'
+                                    className='w-full h-full object-cover'
                                 />
                                 <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
                             </div>
 
                             <div className='p-6'>
-                                <h3 className='project-title text-xl font-bold mb-3 transition-colors duration-300' style={{ color: "var(--text-primary)" }}>
+                                <h3 className=' text-xl font-bold mb-3 transition-colors duration-300' style={{ color: "var(--text-primary)" }}>
                                     {project.title}
                                 </h3>
                                 <p className='text-sm leading-relaxed mb-4 line-clamp-3' style={{ color: "var(--text-secondary)" }}>
@@ -75,7 +76,7 @@ const Projects = () => {
                                     {project.techstack.map((tech, techIndex) => (
                                         <span
                                             key={techIndex}
-                                            className='tech-tag px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 group-hover:scale-105'
+                                            className=' px-3 py-1 text-xs font-medium rounded-full transition-all duration-300 group-hover:scale-105'
                                             style={{
                                                 backgroundColor: "var(--border)",
                                                 color: "var(--text-secondary)",

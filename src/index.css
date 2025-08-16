@@ -105,12 +105,3 @@ body {
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-/* Project card hover effects */
-.group:hover .project-title {
-    color: var(--accent) !important;
-}
-
-.group:hover .tech-tag {
-    background-color: var(--accent) !important;
-    color: #ffffff !important;
-}
