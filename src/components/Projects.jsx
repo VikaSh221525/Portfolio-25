@@ -27,7 +27,7 @@ const Projects = () => {
     ]
     return (
         <>
-            <section className='w-full px-5 md:px-10 lg:px-20 xl:px-30 py-10 lg:py-20 flex flex-col items-center justify-center'>
+            <section id='projects' className='w-full px-5 md:px-10 lg:px-20 xl:px-30 py-10 lg:py-20 flex flex-col items-center justify-center'>
                 <div className='w-full flex flex-col gap-10 items-center'>
                     <h1 className='w-fit text-4xl md:text-5xl font-bold relative' style={{ color: "var(--text-primary)" }}>
                         Featured Projects

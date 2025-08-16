@@ -6,6 +6,7 @@ import Aboutme from './components/Aboutme'
 import Lenis from 'lenis'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
         <Aboutme/>
         <Experience/>
         <Projects/>
+        <Contact/>
       </div>
     </ThemeProvider>
   )
