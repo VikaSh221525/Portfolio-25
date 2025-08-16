@@ -7,6 +7,7 @@ import Lenis from 'lenis'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
         <Experience/>
         <Projects/>
         <Contact/>
+        <Footer/>
       </div>
     </ThemeProvider>
   )
