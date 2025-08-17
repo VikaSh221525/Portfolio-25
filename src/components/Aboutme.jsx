@@ -62,7 +62,7 @@ const Aboutme = () => {
                 viewport={{ once: true, amount: 0.2 }}
             >
                 <motion.div
-                    className='w-full lg:w-[30%] h-64 sm:h-80 md:h-96 lg:h-100 max-w-md mx-auto lg:mx-0'
+                    className='w-full lg:w-[30%] h-100 max-w-md mx-auto lg:mx-0'
                     variants={imageVariants}
                 >
                     <img className='w-full h-full object-cover rounded-lg' src="/myphoto.jpeg" alt="My Pic" />
