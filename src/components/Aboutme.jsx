@@ -70,7 +70,7 @@ const Aboutme = () => {
 
                 <div className='w-full lg:w-[70%] flex flex-col gap-5 text-center lg:text-start' style={{ color: 'var(--text-primary)' }}>
                     <motion.h1
-                        className='w-fit text-2xl sm:text-3xl lg:text-5xl font-bold relative mx-auto lg:mx-0'
+                        className='w-fit text-4xl lg:text-5xl font-bold relative mx-auto lg:mx-0'
                         variants={itemVariants}
                     >
                         About me

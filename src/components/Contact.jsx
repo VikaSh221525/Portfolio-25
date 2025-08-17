@@ -82,7 +82,7 @@ const Contact = () => {
                 style={{ color: 'var(--text-primary)' }}
             >
                 <motion.h1
-                    className='w-fit text-2xl sm:text-3xl lg:text-6xl font-bold relative mx-auto lg:mx-0'
+                    className='w-fit text-4xl lg:text-6xl font-bold relative mx-auto lg:mx-0'
                     variants={itemVariants}
                 >
                     Get In Touch
