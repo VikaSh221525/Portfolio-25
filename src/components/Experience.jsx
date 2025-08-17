@@ -101,7 +101,7 @@ const Experience = () => {
                 </motion.div>
                 <div className='flex flex-col gap-12 max-w-6xl mx-auto'>
                     <motion.div
-                        className='flex flex-col md:flex-row gap-6 md:gap-8'
+                        className='flex flex-row gap-6 md:gap-8'
                         variants={experienceItemVariants}
                     >
                         <motion.div
@@ -111,7 +111,7 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <h1 className='text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>June, 2025 - present</h1>
+                            <h1 className='hidden md:block text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>June, 2025 - present</h1>
                         </motion.div>
                         <div className='flex flex-col items-center flex-shrink-0'>
                             <motion.div
@@ -120,7 +120,7 @@ const Experience = () => {
                                 variants={dotVariants}
                             ></motion.div>
                             <motion.div
-                                className='w-1 h-40 mt-1'
+                                className='w-1 h-60 md:h-40 mt-1'
                                 style={{ backgroundColor: "var(--accent)", originY: 0 }}
                                 variants={timelineVariants}
                             ></motion.div>
@@ -134,6 +134,7 @@ const Experience = () => {
                         >
                             <h1 className='text-2xl font-semibold' style={{ color: "var(--text-primary)" }}>Frontend Developer</h1>
                             <p className='text-lg font-medium' style={{ color: "var(--accent)" }}>Printedge India</p>
+                            <p className='block md:hidden text font-medium' style={{ color: "var(--text-secondary)" }}>June, 2025 - present</p>
                             <p className='leading-relaxed' style={{ color: "var(--text-secondary)" }}>Led the development of responsive web applications using React and Javascript. Collaborated with designers to implement pixel-perfect interfaces and optimize user experience.</p>
                             <motion.div
                                 className='flex flex-wrap gap-2 mt-4'
@@ -158,7 +159,7 @@ const Experience = () => {
                         </motion.div>
                     </motion.div>
                     <motion.div
-                        className='flex flex-col md:flex-row gap-6 md:gap-8'
+                        className='flex flex-row gap-6 md:gap-8'
                         variants={experienceItemVariants}
                     >
                         <motion.div
@@ -168,7 +169,7 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <h1 className='text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>Jan, 2024 - May, 2025</h1>
+                            <h1 className='hidden md:block text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>Lorem, 2024 - Lorem</h1>
                         </motion.div>
                         <div className='flex flex-col items-center flex-shrink-0'>
                             <motion.div
@@ -177,7 +178,7 @@ const Experience = () => {
                                 variants={dotVariants}
                             ></motion.div>
                             <motion.div
-                                className='w-1 h-40 mt-2'
+                                className='w-1 h-60 md:h-40 mt-2'
                                 style={{ backgroundColor: "var(--accent)", originY: 0 }}
                                 variants={timelineVariants}
                             ></motion.div>
@@ -189,9 +190,10 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                         >
-                            <h1 className='text-2xl font-semibold' style={{ color: "var(--text-primary)" }}>Full Stack Developer</h1>
-                            <p className='text-lg font-medium' style={{ color: "var(--accent)" }}>Tech Solutions Inc</p>
-                            <p className='leading-relaxed' style={{ color: "var(--text-secondary)" }}>Developed and maintained full-stack web applications using modern technologies. Worked closely with cross-functional teams to deliver high-quality software solutions and improve system performance.</p>
+                            <h1 className='text-2xl font-semibold' style={{ color: "var(--text-primary)" }}> Developer</h1>
+                            <p className='text-lg font-medium' style={{ color: "var(--accent)" }}>Something soon</p>
+                            <p className='block md:hidden text font-medium' style={{ color: "var(--text-secondary)" }}>Lorem, 2024 - Lorem</p>
+                            <p className='leading-relaxed' style={{ color: "var(--text-secondary)" }}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur maxime dignissimos nulla suscipit recusandae sapiente hic aliquid unde mollitia. </p>
                             <motion.div
                                 className='flex flex-wrap gap-2 mt-4'
                                 initial="hidden"
@@ -215,7 +217,7 @@ const Experience = () => {
                         </motion.div>
                     </motion.div>
                     <motion.div
-                        className='flex flex-col md:flex-row gap-6 md:gap-8'
+                        className='flex flex-row gap-6 md:gap-8'
                         variants={experienceItemVariants}
                     >
                         <motion.div
@@ -225,7 +227,7 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <h1 className='text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>Jun, 2023 - Dec, 2023</h1>
+                            <h1 className='hidden md:block text-lg font-semibold' style={{ color: "var(--text-secondary)" }}>Lorem, 2026 - Lorem</h1>
                         </motion.div>
                         <div className='flex flex-col items-center flex-shrink-0'>
                             <motion.div
@@ -234,7 +236,7 @@ const Experience = () => {
                                 variants={dotVariants}
                             ></motion.div>
                             <motion.div
-                                className='w-1 h-40 mt-2'
+                                className='w-1 h-60 md:h-40 mt-2'
                                 style={{ backgroundColor: "var(--accent)", originY: 0 }}
                                 variants={timelineVariants}
                             ></motion.div>
@@ -246,9 +248,10 @@ const Experience = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                         >
-                            <h1 className='text-2xl font-semibold' style={{ color: "var(--text-primary)" }}>Junior Developer</h1>
-                            <p className='text-lg font-medium' style={{ color: "var(--accent)" }}>StartUp Innovations</p>
-                            <p className='leading-relaxed' style={{ color: "var(--text-secondary)" }}>Started my professional journey as a junior developer, focusing on frontend development and learning industry best practices. Contributed to various projects and gained valuable experience in agile development methodologies.</p>
+                            <h1 className='text-2xl font-semibold' style={{ color: "var(--text-primary)" }}> Developer</h1>
+                            <p className='text-lg font-medium' style={{ color: "var(--accent)" }}>Something soon</p>
+                            <p className='block md:hidden text font-medium' style={{ color: "var(--text-secondary)" }}>Lorem, 2024 - Lorem</p>
+                            <p className='leading-relaxed' style={{ color: "var(--text-secondary)" }}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores minima magnam error explicabo dolorem fuga quod dicta. Reiciendis, exercitationem? </p>
                             <motion.div
                                 className='flex flex-wrap gap-2 mt-4'
                                 initial="hidden"

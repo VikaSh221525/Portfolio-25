@@ -32,7 +32,7 @@ const Projects = () => {
                     <h1 className='w-fit text-4xl md:text-5xl font-bold relative' style={{ color: "var(--text-primary)" }}>
                         Featured Projects
                         <motion.span
-                            className='h-2 absolute -bottom-4 w-[40%] left-1/2 transform -translate-x-1/2'
+                            className='h-2 absolute -bottom-3 w-[40%] left-1/2 transform -translate-x-1/2'
                             style={{ background: "var(--accent)" }}
                             initial={{ scaleX: 0 }}
                             whileInView={{ scaleX: 1 }}

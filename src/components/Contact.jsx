@@ -87,7 +87,7 @@ const Contact = () => {
                 >
                     Get In Touch
                     <motion.span
-                        className='h-2 absolute -bottom-4 w-[40%] left-1/2 transform -translate-x-1/2'
+                        className='h-2 absolute -bottom-3 w-[40%] left-1/2 transform -translate-x-1/2'
                         style={{ background: "var(--accent)" }}
                         initial={{ scaleX: 0 }}
                         whileInView={{ scaleX: 1 }}
@@ -122,9 +122,9 @@ const Contact = () => {
                         </div>
                         <h1 className="text-lg font-medium" style={{ color: "var(--text-primary)" }}>Connect</h1>
                         <div className="flex gap-2">
-                            <a href="#" className="p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><FaLinkedinIn size={25} /></a>
-                            <a href="#" className="p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><FaGithub size={25} /></a>
-                            <a href="#" className="p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><AiFillInstagram size={25} /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vikash-sharma-8641b033b/" className="github-glow-btn p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><FaLinkedinIn size={25} /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/VikaSh221525" className="github-glow-btn p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><FaGithub size={25} /></a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/its.vikashsharma7?igsh=eXd5MmVuMnU5NGw0" className="github-glow-btn p-3 rounded-full" style={{ background: "var(--bg-secondary)" }}><AiFillInstagram size={25} /></a>
                         </div>
                     </div>
 

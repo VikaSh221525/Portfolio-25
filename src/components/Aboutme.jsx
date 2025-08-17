@@ -75,12 +75,12 @@ const Aboutme = () => {
                     >
                         About me
                         <motion.span
-                            className='h-1.5 absolute -bottom-2 w-[60%] left-7'
-                            initial={{ width: 0 }}
-                            whileInView={{ width: "60%" }}
-                            transition={{ duration: 0.8, delay: 0.5 }}
+                            className='h-2 absolute -bottom-3 w-[40%] left-1/2 transform -translate-x-1/2'
+                            style={{ background: "var(--accent)" }}
+                            initial={{ scaleX: 0 }}
+                            whileInView={{ scaleX: 1 }}
                             viewport={{ once: true }}
-                            style={{ background: "var(--accent-color, #3b82f6)" }}
+                            transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
                         />
                     </motion.h1>
 
