@@ -132,16 +132,18 @@ const Nav = () => {
                             ))}
 
                             {/* Mobile Resume Button */}
-                            <motion.button
-                                onClick={closeMenu}
-                                className="resume-button mt-8"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.4 }}
-                            >
-                                <Download className='w-4 h-4' />
-                                <span>Resume</span>
-                            </motion.button>
+                            <a href="/Resume.pdf" download onClick={closeMenu}>
+                                <motion.button
+                                    onClick={closeMenu}
+                                    className="resume-button mt-8"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.4 }}
+                                >
+                                    <Download className='w-4 h-4' />
+                                    <span>Resume</span>
+                                </motion.button>
+                            </a>
                         </div>
                     </motion.div>
                 )}
