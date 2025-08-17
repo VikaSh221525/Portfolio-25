@@ -5,24 +5,27 @@ const Projects = () => {
     const featuredprojects = [
         {
             id: 1,
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop&q=60",
+            image: "https://plus.unsplash.com/premium_photo-1677995700941-100976883af7?q=80&w=1223&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "E-Commerce Platform",
             description: "A modern e-commerce platform with a minimalist design approach, focusing on user experience and conversion optimization.",
-            techstack: ["React", "Node.js", "MongoDB"]
+            techstack: ["React", "Tailwind CSS", "Redux", "AppWrite"],
+            link: "https://techpulse-peach.vercel.app/",
         },
         {
             id: 2,
-            image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&auto=format&fit=crop&q=60",
-            title: "Fitness Tracking App",
+            image: "https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            title: "Code 2 Pitch",
             description: "A mobile application that helps users track their fitness progress, set goals, and maintain healthy habits.",
-            techstack: ["React Native", "Firebase", "Redux"]
+            techstack: ["React", "Tailwind CSS", "Python", "GeminiAPI"],
+            link: "https://code2pitch-ai.vercel.app/",
         },
         {
             id: 3,
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60",
-            title: "Analytics Dashboard",
-            description: "A comprehensive analytics dashboard that visualizes complex data in an intuitive and accessible manner.",
-            techstack: ["Vue.js", "D3.js", "Express"]
+            image: "/Pdf.png",
+            title: "PDF2PPT.AI",
+            description: "A modern, responsive web application built with React and Tailwind CSS for converting PDF documents to PowerPoint presentations. This project provides a complete frontend scaffold ready for backend integration.",
+            techstack: ["React", "Tailwind CSS", "Python", "HuggingFace"],
+            link: "https://pdf-2-ppt.vercel.app/",
         },
     ]
     return (
@@ -46,14 +49,16 @@ const Projects = () => {
                     {featuredprojects.map((project, index) => (
                         <motion.a
                             key={project.id}
-                            href="#" // You can replace this with your actual link
+                            href={project.link} // You can replace this with your actual link
                             className='group relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300  w-full max-w-sm cursor-pointer'
                             style={{ backgroundColor: "var(--bg-secondary)" }}
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -8, scale: 1.03 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+                            transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }} 
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <div className='relative overflow-hidden h-48'>
                                 <img

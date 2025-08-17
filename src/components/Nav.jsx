@@ -61,10 +61,12 @@ const Nav = () => {
                         {isDark ? <Sun className='w-5 h-5' /> : <Moon className='w-5 h-5' />}
                     </motion.button>
 
-                    <button className="resume-button">
-                        <Download className='w-4 h-4' />
-                        <span>Resume</span>
-                    </button>
+                    <a href="/Resume.pdf" download onClick={closeMenu}>
+                        <button className="resume-button">
+                            <Download className='w-4 h-4' />
+                            <span>Resume</span>
+                        </button>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
